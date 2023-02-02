@@ -5,11 +5,11 @@ Most Asked and Important Topics which will be covered and soon starting clear cu
 
 Android Interview Questions
 
-BASE:
+### BASE:
 
-Why does an android app Lag?
+* **Why does an android app Lag?
 
-Here, the critical point is that the time for which the GC runs, your app does not run for that time. So, it seems that the app is lagging. And hence, a bad experience for the user of the application. Let's understand it deeply.
+-Here, the critical point is that the time for which the GC runs, your app does not run for that time. So, it seems that the app is lagging. And hence, a bad experience for the user of the application. Let's understand it deeply.
 The Android app updates its UI every 16ms (considering 60FPS -> 1000ms/60 = 16.67ms ~ 16ms) for smooth UI rendering.
 Frame per second (FPS) is the measurement of the number of frames that appear within a second
 So, if the GC runs for more time, the app will be unable to update UI and it will skip a few frames, so it will seem that the app is lagging. That is one of the reasons for the app lag.
